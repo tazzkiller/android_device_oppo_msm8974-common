@@ -267,3 +267,7 @@ $(call inherit-product-if-exists, vendor/oppo/msm8974-common/msm8974-common-vend
 
 # Inherit from oppo-common
 $(call inherit-product, device/oppo/common/common.mk)
+
+# CAF HALs
+$(call project-set-path,qcom-display,device/oppo/msm8974-common/display)
+$(call project-set-path,qcom-media,device/oppo/msm8974-common/media)
