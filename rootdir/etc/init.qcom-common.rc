@@ -31,6 +31,8 @@ on early-boot
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
     write /sys/kernel/boot_adsp/boot 1
+    chmod 0644 /sys/module/cpuidle/parameters/off
+    write /sys/module/cpuidle/parameters/off 1
 
 on boot
     # bring CPUs online
@@ -681,3 +683,8 @@ service pfm /system/bin/pfm
     class late_start
     user system
     group system drmrpc mount
+
+on property:gsm.version.baseband=DI.3.0.c6-00241-M8974AAAAANAZM-1
+    write /sys/module/cpuidle/parameters/off 0
+on property:gsm.version.baseband=DI.3.0.c6-00230-M8974AAAAANAZM-1
+    write /sys/module/cpuidle/parameters/off 0
