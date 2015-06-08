@@ -175,6 +175,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608 \
     persist.hwc.mdpcomp.enable=true
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.radio.add_power_save=1
+
 # Do not power down SIM card when modem is sent to Low Power Mode.
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.apm_sim_not_pwdn=1
@@ -185,8 +188,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Ril
 PRODUCT_PROPERTY_OVERRIDES += \
-    rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so \
-    ril.subscription.types=NV,RUIM
+    rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
 
 # Cell Broadcasts
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -239,11 +241,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # QCOM
 PRODUCT_PROPERTY_OVERRIDES += \
     com.qc.hardware=true
-
-# gps
-#system prop for switching gps driver to qmi
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.gps.qmienabled=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
