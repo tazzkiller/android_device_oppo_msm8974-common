@@ -377,7 +377,7 @@ on property:service.bootanim.exit=1
 
 on property:sys.boot_completed=1
     # Switch to ROW and balanced mode after boot for better UX
-    write /sys/class/devfreq/qcom,cpubw.40/governor "cpubw_hwmon"
+    write /sys/class/devfreq/qcom,cpubw.40/governor "msm_cpufreq"
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "interactive"
@@ -698,7 +698,7 @@ on property:sys.perf.profile=0
     write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor "conservative"
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "conservative"
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor "conservative"
-    write /sys/class/kgsl/kgsl-3d0/devfreq/governor "msm-adreno-tz"
+    write /sys/class/kgsl/kgsl-3d0/devfreq/governor "powersave"
     start mpdecision
 
 on property:sys.perf.profile=1
@@ -706,7 +706,7 @@ on property:sys.perf.profile=1
     write /sys/devices/system/cpu/cpu1/online 1
     write /sys/devices/system/cpu/cpu2/online 1
     write /sys/devices/system/cpu/cpu3/online 1
-    write /sys/class/devfreq/qcom,cpubw.40/governor "cpubw_hwmon"
+    write /sys/class/devfreq/qcom,cpubw.40/governor "msm_cpufreq"
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "smartmax"
     write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor "smartmax"
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "smartmax"
