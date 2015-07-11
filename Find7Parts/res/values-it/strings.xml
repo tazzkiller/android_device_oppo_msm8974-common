@@ -8,6 +8,9 @@
     <string name="camera_summary_head">Disegna un \"O\" per attivare la fotocamera</string>
     <string name="torch_title_head">Torcia</string>
     <string name="torch_summary_head">Disegna una  \"V\" per attivare la torcia</string>
+    <string name="category_touchscreen_title">Altre caratteristiche touchscreen</string>
+    <string name="keypad_title_head">Disabilitazione tastiera</string>
+    <string name="keypad_summary_head">Disabilita pulsanti hardware capacitivi</string>
 <!--
     <string name="music_title_head">Musica</string>
     <string name="music_summary_head">Disegna un \"II\" per attivare la musica</string>

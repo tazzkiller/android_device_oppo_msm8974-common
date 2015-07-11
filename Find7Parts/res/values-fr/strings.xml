@@ -22,6 +22,9 @@
     <string name="camera_summary_head">Dessiner un cercle pour démarrer l\'appareil photo</string>
     <string name="torch_title_head">Torche</string>
     <string name="torch_summary_head">Dessiner un V pour afficher la torche</string>
+    <string name="category_touchscreen_title">Autres caractéristiques de l\'écran tactile</string>
+    <string name="keypad_title_head">Désactiver clavier</string>
+    <string name="keypad_summary_head">Désactiver les boutons matériels capacitifs</string>
 <!--
     <string name="music_title_head">Musique</string>
     <string name="music_summary_head">Dessiner un II, &lt; ou &gt; pour contrôler le lecteur de musique</string>

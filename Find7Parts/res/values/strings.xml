@@ -22,6 +22,9 @@
     <string name="camera_summary_head">Draw a circle to start camera</string>
     <string name="torch_title_head">Torch</string>
     <string name="torch_summary_head">Draw a V to toggle torch</string>
+    <string name="category_touchscreen_title">Other touchscreen features</string>
+    <string name="keypad_title_head">Disable keypad</string>
+    <string name="keypad_summary_head">Disable capacitive hardware buttons</string>
 <!--
     <string name="music_title_head">Music</string>
     <string name="music_summary_head">Draw II, &lt; or &gt; to control music playback</string>
