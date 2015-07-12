@@ -26,7 +26,6 @@ public class DeviceSettings extends PreferenceActivity  {
     public static final String KEY_DOUBLE_TAP_SWITCH = "double_tap";
     public static final String KEY_CAMERA_SWITCH = "camera";
     public static final String KEY_TORCH_SWITCH = "torch";
-    public static final String KEY_KEYPAD_SWITCH = "keypad";
 
 /* Commented out until reimplemented on F7
     public static final String KEY_MUSIC_SWITCH = "music";
@@ -36,7 +35,6 @@ public class DeviceSettings extends PreferenceActivity  {
     private TwoStatePreference mDoubleTapSwitch;
     private TwoStatePreference mTorchSwitch;
     private TwoStatePreference mCameraSwitch;
-    private TwoStatePreference mKeypadSwitch;
 
 /*  private TwoStatePreference mMusicSwitch;
 */
@@ -60,11 +58,6 @@ public class DeviceSettings extends PreferenceActivity  {
         mCameraSwitch.setEnabled(CameraGestureSwitch.isSupported());
         mCameraSwitch.setChecked(CameraGestureSwitch.isEnabled(this));
         mCameraSwitch.setOnPreferenceChangeListener(new CameraGestureSwitch());
-
-        mKeypadSwitch = (TwoStatePreference) findPreference(KEY_KEYPAD_SWITCH);
-        mKeypadSwitch.setEnabled(KeypadSwitch.isSupported());
-        mKeypadSwitch.setChecked(KeypadSwitch.isEnabled(this));
-        mKeypadSwitch.setOnPreferenceChangeListener(new KeypadSwitch());
 
         /*mMusicSwitch = (TwoStatePreference) findPreference(KEY_MUSIC_SWITCH);
         mMusicSwitch.setEnabled(MusicGestureSwitch.isSupported());

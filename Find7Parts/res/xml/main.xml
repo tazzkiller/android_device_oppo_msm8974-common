@@ -15,13 +15,6 @@
 			android:key="torch"
 			android:summary="@string/torch_summary_head"
 			android:title="@string/torch_title_head" />
-	</PreferenceCategory>
-
-	<PreferenceCategory android:title="@string/category_touchscreen_title" >
-		<CheckBoxPreference
-			android:key="keypad"
-			android:summary="@string/keypad_summary_head"
-			android:title="@string/keypad_title_head" />
 
 <!--
 		<CheckBoxPreference
