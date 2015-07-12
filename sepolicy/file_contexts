@@ -2,9 +2,6 @@
 # OmniROM oppo common sepolicy
 #
 
-# keypad backlight brightness
-/sys/class/leds/button-backlight/brightness u:object_r:sysfs_keypad_leds:s0
-
 /data/cam_socket.*  u:object_r:camera_socket:s0
 /persist/sns.reg    u:object_r:sensors_persist_file:s0
 
