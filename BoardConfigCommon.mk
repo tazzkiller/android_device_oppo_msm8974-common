@@ -84,7 +84,6 @@ BOARD_CHARGER_SHOW_PERCENTAGE := true
 BOARD_HARDWARE_CLASS += device/oppo/msm8974-common/cmhw
 
 # Graphics
-BOARD_EGL_CFG := device/oppo/msm8974-common/configs/egl.cfg
 USE_OPENGL_RENDERER := true
 TARGET_CONTINUOUS_SPLASH_ENABLED := true
 TARGET_USES_ION := true
