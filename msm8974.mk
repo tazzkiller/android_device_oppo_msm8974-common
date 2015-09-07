@@ -223,7 +223,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnGsmDevice=1 \
     wifi.interface=wlan0 \
     wifi.supplicant_scan_interval=15 \
-    ro.telephony.call_ring.multiple=0
+    ro.telephony.call_ring.multiple=0 \
+    persist.sys.strictmode.disable=true
 
 # Permissions
 PRODUCT_COPY_FILES += \
