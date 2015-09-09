@@ -81,7 +81,10 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 BOARD_CHARGER_SHOW_PERCENTAGE := true
 
 # CM Hardware
-BOARD_HARDWARE_CLASS += device/oppo/msm8974-common/cmhw
+BOARD_USES_CYANOGEN_HARDWARE := true
+BOARD_HARDWARE_CLASS += \
+    hardware/cyanogen   \
+    device/oppo/msm8974-common/cmhw
 
 # Graphics
 USE_OPENGL_RENDERER := true
